@@ -1,0 +1,23 @@
+---
+type: Post
+title: String interpolation in Power Fx
+description: >-
+  In Power Fx, string interpolation helps us place the right data into the right place without splitting a main string. Without it, we had to split the main string into many small pieces to insert the data between words.
+date: '2025-01-06'
+---
+
+
+String interpolation is a technique to evaluate a string literal containing placeholders. In C#, we use `$"string"` for interpolation, and in Python, we use `f"string"`. In Power Fx, string interpolation helps us place the right data into the right place without splitting a main string. Without it, we had to split the main string into many small pieces to insert the data between words.
+
+You can use string interpolation wherever Power Fx exists, including Power Apps, Dataverse, and Copilot Studio.
+
+Some benefits:
+
+* **Readability and Clarity**: String interpolation makes code easier to read and understand by clearly showing where the data is inserted into strings. This also improves code maintainability and makes debugging easier.
+* **Reduced Errors**: By directly embedding expressions within string literals, string interpolation reduces the risk of errors that can occur with concatenation, such as missing spaces or incorrect ordering of variables.
+* **Performance**: With this technique, you don’t have to create multiple strings and concatenate them, thus reducing overhead costs and improving performance, especially when working with long strings.
+
+Here is the normal way:
+
+```plaintext
+[Insert example of normal string concatenation here]
