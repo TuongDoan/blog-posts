@@ -22,6 +22,8 @@ Now, all of this is available with a **single button control**! 🎉
 - **Layout**: options include *Icon before text*, *Icon after text*, *Icon only*, *Text only*  
 - **Icon style**: *Filled* or *Outline*  
 
+![PowerAppsBooster-2024-06-01-at-4 24 07 PM](https://github.com/user-attachments/assets/f9798760-4c1c-44c6-8b26-6fdbd21127b0)
+
 ---
 
 ## Availability
