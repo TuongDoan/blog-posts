@@ -83,12 +83,12 @@ Từ các ý trên => Ai nghĩ ngành Data này học xong có việc luôn thì
 
 Chính trong Power BI đã có AI thể tự generate DAX function để vẽ chart chỉ bằng cách nhập yêu cầu theo ngôn ngữ tự nhiên, các module dự đoán, và khả năng gắn với các predictive model,…. Có sẵn hết. Gắn là chạy. Có thể các công nghệ này chưa chín tới, nhưng bạn sẽ thấy mọi thứ thay đổi nhanh thôi.
 
-![quick-measures copy.jpg](quick-measures%20copy.jpg)  
+![6419624_quick-measures_copy](https://github.com/user-attachments/assets/64e9ce75-32b3-4b67-9e89-3903909f63f2)
 *Setup data model chuẩn tí là AI nó đọc hiểu và làm thay mình muôn.*
 
 Mình cũng dùng ChatGPT rất nhiều, vì nó thực sự giảm rất nhiều khối lượng công việc. Tất nhiên là dùng phải cẩn thận, mình phải hiểu rõ kết quả, mình chỉ nhờ nó làm bớt việc tay chân thôi. Sự tiện dụng của ChatGPT trong lập trình là không thể chối cãi.
 
-![chatgpt sql.jpg](chatgpt%20sql.jpg)  
+![6419625_chatgpt_sql](https://github.com/user-attachments/assets/9327f675-6f6c-49a8-88ad-3289570b77bc)
 *ChatGPT có thể xử lý những cấu SQL phức tạp*
 
 Trong Tinh Tế có anh Thầy Giáo Sang có thể solo viết nguyên cái web app để ảnh dạy học nhờ ChatGPT.
@@ -123,7 +123,7 @@ Các trung tâm hay nói học ra lương nghìn đô, nhưng công ty việt na
 
 Còn nếu chỗ bạn apply một công ty Mỹ hay một công ty làm outsourcing các dự án tính bằng tiền đô thì chi ra $1000 lại rất đơn giản với họ vì số tiền đó chả bao nhiêu so với quy mô dự án. Nhưng mà những kèo này thì … không nhiều
 
-![Screenshot 2023-05-05 at 3.09.08 PM.png](Screenshot%202023-05-05%20at%203.09.08%20PM.png)  
+<img width="1396" height="1094" alt="6419291_Screenshot_2023-05-05_at_3 09 08_PM" src="https://github.com/user-attachments/assets/e245742c-b7d2-4260-a904-c3dc42864704" />
 *Một thực trạng chung của ngành IT mà mình quan sát được: Không tiếng anh = lương thấp dù nhiều năm kinh nghiệm. Úp to chứ lúc deal thấp hơn nữa. Nhiều công ty lợi dụng việc bạn ko biết tiếng anh để ép giá.*
 
 ---
