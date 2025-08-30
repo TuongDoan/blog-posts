@@ -27,9 +27,14 @@ If the current version gives you temporary compatibility issues or bugs, you can
 
 ## How to Change the Power Apps Authoring Version
 
-1. From **Power Apps Studio**, choose **Settings**.  
-2. In the **Support** tab, you can see your current authoring version. Click **Edit** to open the *Change authoring version* popup.  
-3. Select an authoring version, then hit **Reload + apply version** to apply the new authoring version to the studio.  
+<img width="1573" height="999" alt="image" src="https://github.com/user-attachments/assets/9f998be7-3cc4-4916-a0df-33cb9a96dca3" />
+From **Power Apps Studio**, choose **Settings**.
+
+<img width="1940" height="1252" alt="image" src="https://github.com/user-attachments/assets/feee21d8-7ca0-489d-8d95-abf73825ab47" />
+In the **Support** tab, you can see your current authoring version. Click **Edit** to open the *Change authoring version* popup.  
+
+<img width="1942" height="1256" alt="image" src="https://github.com/user-attachments/assets/2c475d34-94ac-480f-ad86-8a1261ebbae9" />
+Select an authoring version, then hit **Reload + apply version** to apply the new authoring version to the studio.  
 
 ---
 
