@@ -26,6 +26,8 @@ The difference arises from the **unit of font size**:
 - To convert **points (classic control)** → **pixels (modern control)**:  
   **Multiply** the font size value by `0.75`
 
+<img width="1024" height="332" alt="Font-Size-Consistency-1024x332 (1)" src="https://github.com/user-attachments/assets/8b4a6bc9-9b35-4fb8-90c0-bfbaa65c80ac" />
+
 ---
 
 ## Using Variables for Consistency
