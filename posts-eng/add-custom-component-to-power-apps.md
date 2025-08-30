@@ -9,8 +9,7 @@ Power Apps custom components, aka Power Apps Component Framework (PCF) component
 
 ## Step 1: Allow custom components in Admin Center
 
-![IMG_2543](https://github.com/user-attachments/assets/bfe7bd11-47d0-4c4b-a48e-05827945c9e7)
-
+![TuongIO_Tutorial_20250706150939](https://github.com/user-attachments/assets/eaf3afda-4841-4d1c-92dd-54672e90701e)
 
 Before adding your component, make sure custom components are enabled in your environment and you have enough permission to turn on the setting below:
 
@@ -32,6 +31,8 @@ If you don’t know or can’t turn on this feature, ask your Power Platform Adm
 
 Follow the image (omitted here) and upload the ZIP file into your environment.
 
+![TuongIO_Tutorial_20250706150941](https://github.com/user-attachments/assets/5d320b9d-c539-4299-bb87-bb4d0f475840)
+
 ---
 
 ## Step 3: Enable the component in your App
@@ -41,6 +42,9 @@ Follow the image (omitted here) and upload the ZIP file into your environment.
 3. Switch to the **Code component** tab.  
 4. Choose the custom component that you imported in Step 2.
 
+![TuongIO_Tutorial_20250706150944](https://github.com/user-attachments/assets/d99a827e-9052-4172-8df5-28118e43434a)
+
+
 ---
 
 ## Step 5: Insert the custom component into screen and configure
@@ -49,6 +53,9 @@ Follow the image (omitted here) and upload the ZIP file into your environment.
 2. Drag and drop the component onto your desired screen within the Canvas app.  
 3. Click on the component you’ve just added.  
 4. In the **Properties** pane on the right, set the required properties or inputs as needed for your component.
+
+![TuongIO_Tutorial_20250706151603](https://github.com/user-attachments/assets/21a642f1-67cd-4f8b-9315-571269d99d0e)
+
 
 ---
 
