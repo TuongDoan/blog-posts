@@ -5,7 +5,7 @@
       "README.md": {}
     },
     "./posts-eng": {
-      "example-post-1.md": {
+      "add-custom-component-to-power-apps.md": {
         "type": "Post",
         "title": "How to Add a Custom Component to Your Power Apps",
         "description": "Learn how to enhance your Power Apps by adding custom components, enabling reusable UI elements and improved app functionality.",
