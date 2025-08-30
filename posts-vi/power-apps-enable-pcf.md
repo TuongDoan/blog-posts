@@ -6,7 +6,6 @@ description: >-
   component (PCF) trong Power Apps nhằm mở rộng tính năng cho ứng dụng canvas.
 date: '2025-07-06'
 ---
-
 Power Apps custom components, hay Power Apps Component Framework (PCF), là các thành phần được phát triển từ code truyền thống, chuyên biệt dùng để nâng cao chức năng cho ứng dụng của bạn. Mặc định Power Apps đã cung cấp nhiều control hữu ích, tuy nhiên đôi khi có các yêu cầu nghiệp vụ nâng cao sẽ vượt ra ngoài khả năng của các thành phần đó, vì thế PCF ra đời để bổ sung, tuỳ chỉnh Power Apps với TypeScript.
 
 Gọi đúng là custom code component, nhưng cứ gọi chung là PCF cho ngắn hen. Giờ mình sẽ chỉ các bạn cách dùng PCF, từng bước:
@@ -60,5 +59,3 @@ Tải file ZIP chứa thành phần rồi upload vào môi trường của bạn
 ---
 
 Vậy là bạn đã thêm thành công một custom component vào ứng dụng canvas Power Apps rồi đó :V
-
-_Last Update: July 6, 2025_

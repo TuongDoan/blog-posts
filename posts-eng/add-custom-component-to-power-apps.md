@@ -2,7 +2,7 @@
 type: Post
 title: How to Add a Custom Component to Your Power Apps
 description: >-
-  Learn how to enhance your Power Apps by adding custom components, enabling reusable UI elements and improved app functionality.
+  Learn how to enhance your Power Apps by adding custom components, react code, and improved app functionality.
 date: '2025-01-06'
 ---
 Power Apps custom components, aka Power Apps Component Framework (PCF) components, are specialized building blocks created to enhance the functionality of your apps beyond the standard prebuilt controls provided by Microsoft. While Power Apps includes many useful built-in controls, custom components let you integrate advanced features tailored to your specific business needs.
@@ -20,8 +20,10 @@ Before adding your component, make sure custom components are enabled in your en
 5. Find **Power Apps component framework for canvas apps** and enable it.
 
 Or you can access using your environment ID:
+```markdown
+https://admin.powerplatform.microsoft.com/manage/environments/{YOUR-ENVIRONMENT-ID}/settings/Features
+```
 
-https://admin.powerplatform.microsoft.com/manage/environments/{YOUR-EVIRONMENT-ID}/settings/Features
 
 If you don’t know or can’t turn on this feature, ask your Power Platform Admin.
 
@@ -29,7 +31,7 @@ If you don’t know or can’t turn on this feature, ask your Power Platform Adm
 
 ## Step 2: Import the custom component to your environment
 
-Follow the image (omitted here) and upload the ZIP file into your environment.
+Follow the image and upload the ZIP file into your environment.
 
 ![TuongIO_Tutorial_20250706150941](https://github.com/user-attachments/assets/5d320b9d-c539-4299-bb87-bb4d0f475840)
 
