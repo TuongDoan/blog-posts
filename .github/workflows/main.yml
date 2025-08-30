@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write  
+  contents: write   # allow push to repo
 
 jobs:
   generate-structure:
@@ -18,17 +18,47 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq yq
+
       - name: Generate repo structure JSON
         run: |
-          echo '{' > repo-structure.json
-          echo '  "repo": "'$(basename $GITHUB_REPOSITORY)'",' >> repo-structure.json
-          echo '  "structure": {' >> repo-structure.json
+          REPO_NAME=$(basename $GITHUB_REPOSITORY)
+          echo '{ "repo": "'"$REPO_NAME"'", "structure": {' > repo-structure.json
+
+          # Iterate through folders
           find . -type d ! -path '*/\.*' | while read -r dir; do
-            files=$(find "$dir" -maxdepth 1 -type f ! -path '*/\.*' -exec basename {} \; | jq -R . | jq -s .)
-            echo '    "'"$dir"'": '"$files"','
-          done | sed '$ s/,$//' >> repo-structure.json
-          echo '  }' >> repo-structure.json
-          echo '}' >> repo-structure.json
+            echo '    "'"$dir"'": {' >> tmp.json
+
+            # Process each file in that folder
+            find "$dir" -maxdepth 1 -type f ! -path '*/\.*' | while read -r file; do
+              filename=$(basename "$file")
+              if [[ $filename == *.md ]]; then
+                # Extract YAML front matter
+                FRONTMATTER=$(awk '/^---/{flag=!flag; next} flag' "$file")
+                if [ -n "$FRONTMATTER" ]; then
+                  META=$(echo "$FRONTMATTER" | yq -o=json)
+                  echo '      "'"$filename"'": '"$META"',' >> tmp.json
+                else
+                  echo '      "'"$filename"'": {} ,' >> tmp.json
+                fi
+              else
+                echo '      "'"$filename"'": {} ,' >> tmp.json
+              fi
+            done
+
+            # close folder JSON
+            sed -i '$ s/,$//' tmp.json
+            echo '    },' >> tmp.json
+          done
+
+          # Clean trailing commas and close JSON
+          sed -i '$ s/,$//' tmp.json
+          cat tmp.json >> repo-structure.json
+          echo '  } }' >> repo-structure.json
+          rm tmp.json
 
       - name: Overwrite README.md with JSON
         run: |
