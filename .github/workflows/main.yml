@@ -27,6 +27,7 @@ jobs:
         run: |
           REPO_NAME=$(basename $GITHUB_REPOSITORY)
           echo '{ "repo": "'"$REPO_NAME"'", "structure": {' > repo-structure.json
+          > tmp.json
 
           # Iterate through folders
           find . -type d ! -path '*/\.*' | while read -r dir; do
@@ -36,10 +37,11 @@ jobs:
             find "$dir" -maxdepth 1 -type f ! -path '*/\.*' | while read -r file; do
               filename=$(basename "$file")
               if [[ $filename == *.md ]]; then
-                # Extract YAML front matter
+                # Extract YAML front matter (between --- ... ---)
                 FRONTMATTER=$(awk '/^---/{flag=!flag; next} flag' "$file")
                 if [ -n "$FRONTMATTER" ]; then
-                  META=$(echo "$FRONTMATTER" | yq -o=json)
+                  # Parse with yq (fail action if invalid YAML)
+                  META=$(echo "$FRONTMATTER" | yq -o=json '.')
                   echo '      "'"$filename"'": '"$META"',' >> tmp.json
                 else
                   echo '      "'"$filename"'": {} ,' >> tmp.json
