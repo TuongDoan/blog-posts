@@ -56,19 +56,23 @@ https://MY_TENANT.sharepoint.com/sites/DEMO_PWAPP/_api/v2.1/sites(‘057f5fce-7a
 The **blue part** of the URL is consistent, but the **red part** (file name) changes and is encoded by the system. In the flow, we call the SharePoint API, parse JSON twice, and encode the file name. Then we construct the URL and send it back to Power Apps for download.
 
 ---
+<img width="862" height="1004" alt="image" src="https://github.com/user-attachments/assets/8e6f82d0-1cad-4ce3-b965-fafbedb919bf" />
 
 ## Building the Flow
 
 ### 1. Trigger: Power Apps (V2)
 
+<img width="1190" height="200" alt="image" src="https://github.com/user-attachments/assets/caea6604-15f3-4816-bcd6-116613e36bc8" />
 At the trigger, create a **Number** type parameter to store the ID of the item that you want to download.
 
 ### 2. Send an HTTP request to SharePoint
 
+<img width="1190" height="480" alt="image" src="https://github.com/user-attachments/assets/05930ace-e6b5-45a3-a58c-4a4e923bc2aa" />
 Retrieve the details of the image field.
 
 ### 3. Parse JSON
 
+<img width="1232" height="696" alt="image" src="https://github.com/user-attachments/assets/3a80b06a-7904-4c14-8984-966376cd771d" />
 The Parse JSON action will give us the JSON object that contains the URL.
 
 #### JSON Schema
@@ -92,6 +96,7 @@ The Parse JSON action will give us the JSON object that contains the URL.
 
 ### 4. Parse JSON 1
 
+<img width="1218" height="688" alt="image" src="https://github.com/user-attachments/assets/3f154cb0-dde6-4e2d-a801-558dd276d3a1" />
 Parse the result object again to obtain the actual file name.
 
 ```json
@@ -105,6 +110,7 @@ Parse the result object again to obtain the actual file name.
 
 ### 5. Compose the Encoded URL
 
+<img width="1192" height="396" alt="image" src="https://github.com/user-attachments/assets/2e048d3a-66e3-4538-bb49-86dd2a6495a8" />
 Use an expression to encode the file name:
 
 ```csharp
@@ -117,6 +123,7 @@ encodeUriComponent(
 
 ### 6. Respond to a PowerApp or Flow
 
+<img width="1780" height="332" alt="image" src="https://github.com/user-attachments/assets/f07513d7-a46f-4d38-9e8f-9fba47267361" />
 Create a **Text** parameter named `outputURL` to send the URL back to Power Apps.
 
 ### 7. Pass the URL to Power Apps
@@ -141,4 +148,3 @@ Download(
 
 This approach minimizes system effort and improves performance.
 
----
