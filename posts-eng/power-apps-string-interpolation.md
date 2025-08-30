@@ -16,10 +16,16 @@ Some benefits:
 * **Performance**: With this technique, you don’t have to create multiple strings and concatenate them, thus reducing overhead costs and improving performance, especially when working with long strings.
 
 Here is the normal way:
+<img width="2000" height="379" alt="image" src="https://github.com/user-attachments/assets/de5252e5-a8dd-41fb-8520-34caf6ef09bc" />
+
 
 And with string interpolation:
+<img width="2000" height="378" alt="image" src="https://github.com/user-attachments/assets/0342da29-64a7-43bf-872c-e9b429115a9d" />
+
 
 To escape sequences in an interpolated string, use double curly braces:
+<img width="1352" height="374" alt="image" src="https://github.com/user-attachments/assets/3dff2547-b108-47fe-bd4b-4b1d8f800dd2" />
+
 
 Happy coding 🙂
 
