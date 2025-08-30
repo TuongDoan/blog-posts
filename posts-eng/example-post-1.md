@@ -9,6 +9,9 @@ Power Apps custom components, aka Power Apps Component Framework (PCF) component
 
 ## Step 1: Allow custom components in Admin Center
 
+![IMG_2543](https://github.com/user-attachments/assets/bfe7bd11-47d0-4c4b-a48e-05827945c9e7)
+
+
 Before adding your component, make sure custom components are enabled in your environment and you have enough permission to turn on the setting below:
 
 1. Navigate to the Power Platform Admin Center.  
