@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  
+
 jobs:
   generate-structure:
     runs-on: ubuntu-latest
@@ -12,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate repo structure JSON
         run: |
@@ -25,18 +30,14 @@ jobs:
           echo '  }' >> repo-structure.json
           echo '}' >> repo-structure.json
 
-      - name: Update README.md
+      - name: Overwrite README.md with JSON
         run: |
-          STRUCTURE=$(cat repo-structure.json | jq .)
-          if grep -q "## 📂 Repository Structure" README.md; then
-            sed -i '/## 📂 Repository Structure/,$d' README.md
-          fi
-          echo -e "\n## 📂 Repository Structure\n\n\`\`\`json\n$STRUCTURE\n\`\`\`" >> README.md
+          cat repo-structure.json | jq . > README.md
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md repo-structure.json
-          git commit -m "Update repo structure in README.md"
-          git push
+          git add README.md
+          git commit -m "Update repo structure in README.md" || echo "No changes to commit"
+          git push origin HEAD:main
