@@ -33,15 +33,24 @@ Trong flow, mình sẽ gọi SharePoint API, phân tích JSON 2 lần để lấ
 
 ## Các Bước Thực Hiện
 
+<img width="862" height="1004" alt="image" src="https://github.com/user-attachments/assets/4b56735f-e156-49a4-976a-7f786b9c6421" />
+
+
 ### 1. Trigger: Power Apps (V2)
+
+<img width="1190" height="200" alt="image" src="https://github.com/user-attachments/assets/744294e4-a325-447d-bb87-28506d6c0661" />
 
 - Tạo một tham số dạng **Number** để lưu ID của item cần tải xuống.  
 
 ### 2. Send an HTTP request to SharePoint
 
+<img width="1190" height="480" alt="image" src="https://github.com/user-attachments/assets/29d98bef-1d7b-4964-8d7d-6768b31c2262" />
+
 - Gọi API của SharePoint để lấy metadata của hình ảnh.  
 
 ### 3. Parse JSON
+
+<img width="1232" height="696" alt="image" src="https://github.com/user-attachments/assets/02caf2df-10f8-452e-bcfe-83dca84fed6c" />
 
 Sử dụng **Parse JSON** để phân tích dữ liệu trả về.  
 
@@ -66,6 +75,8 @@ Ví dụ JSON Schema:
 
 ### 4. Parse JSON 1
 
+<img width="1218" height="688" alt="image" src="https://github.com/user-attachments/assets/e28f64fb-4c9b-4d2e-94e2-0877f110ccf5" />
+
 Từ kết quả `Parse JSON`, tiếp tục phân tích object **SampleImage** để lấy URL gốc:
 
 ```json
@@ -79,6 +90,8 @@ Từ kết quả `Parse JSON`, tiếp tục phân tích object **SampleImage** �
 
 ### 5. Compose Encoded URL
 
+<img width="1192" height="396" alt="image" src="https://github.com/user-attachments/assets/3626a590-ff09-43e8-8b76-2b890a293e58" />
+
 Tạo expression để mã hóa tên file:  
 
 ```csharp
@@ -90,6 +103,8 @@ encodeUriComponent(body('Parse_JSON_1')?['fileName'])
 ---
 
 ## Gửi URL Về Power Apps
+
+<img width="1780" height="332" alt="image" src="https://github.com/user-attachments/assets/6b5c5468-e737-4434-803d-42a58c442dea" />
 
 Trong flow, trả về URL bằng tham số **outputURL**.  
 Sau đó trong Power Apps, sử dụng đoạn code sau ở **OnSelect**:  
