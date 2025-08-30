@@ -23,6 +23,8 @@ Sự khác biệt xuất phát từ **đơn vị kích thước phông chữ**:
 - Từ **pixel (modern control)** → **point (classic control)**: Chia giá trị kích thước phông chữ cho `0.75`  
 - Từ **point (classic control)** → **pixel (modern control)**: Nhân giá trị kích thước phông chữ với `0.75`  
 
+<img width="1024" height="332" alt="Font-Size-Consistency-1024x332 (1)" src="https://github.com/user-attachments/assets/a8b5c888-dbbf-481b-85ff-82e5d4a858e9" />
+
 ---
 
 ## Sử Dụng Biến Để Duy Trì Tính Nhất Quán
