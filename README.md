@@ -88,7 +88,7 @@
       "power-apps-enable-pcf.md": {
         "type": "Post",
         "title": "Cách thêm code component (PCF) vào Power Apps để mở rộng tính năng",
-        "description": "Bài viết này hướng dẫn chi tiết cách kích hoạt, import và sử dụng code component (PCF) trong Power Apps nhằm mở rộng tính năng cho ứng dụng canvas.",
+        "description": "Hướng dẫn chi tiết cách kích hoạt, import và sử dụng code component (PCF) trong Power Apps nhằm mở rộng tính năng cho ứng dụng canvas.",
         "date": "2025-07-06"
       },
       "power-apps-secure-download-sharepoint-images-vietnamese.md": {
