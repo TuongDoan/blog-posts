@@ -32,7 +32,7 @@ The difference arises from the **unit of font size**:
 
 To keep font sizes consistent across the app, declare variables in the **App’s Formulas** property:
 
-```powerapps
+```csharp
 varFontSizeClassic = 13;
 varFontSizeModern = varFontSizeClassic * 0.75;
 ```
