@@ -51,6 +51,9 @@ Ví dụ: Nhà mình có đứa em cực giỏi logic, nhưng vì stereotype nà
 👉 Nếu bị *gatekeeping*: hãy thấy **tội nghiệp cho sự insecure** của họ và tiếp tục trau dồi.  
 👉 Hãy tìm những người IT tử tế để học hỏi, vì số đông là như vậy.  
 
+![Gate-Keeping-1000x580](https://github.com/user-attachments/assets/0ff35ab7-b431-43b4-a7f8-1504b9ee1766)
+
+
 ---
 
 ## Kết Lại
