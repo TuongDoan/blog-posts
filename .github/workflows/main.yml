@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write   # allow push to repo
+  contents: write
 
 jobs:
   generate-structure:
@@ -14,62 +14,70 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install tools
+      - name: Build JSON & overwrite README.md (strict YAML)
         run: |
-          sudo apt-get update
-          sudo apt-get install -y jq yq
+          set -euo pipefail
+          python3 - << 'PY'
+          import os, json, sys, re
+          try:
+              import yaml
+          except ImportError:
+              import subprocess, sys
+              subprocess.check_call([sys.executable, "-m", "pip", "install", "pyyaml"])
+              import yaml
 
-      - name: Generate repo structure JSON
-        run: |
-          REPO_NAME=$(basename $GITHUB_REPOSITORY)
-          echo '{ "repo": "'"$REPO_NAME"'", "structure": {' > repo-structure.json
-          > tmp.json
+          repo = os.environ.get("GITHUB_REPOSITORY", "")
+          repo_name = repo.split("/")[-1] if repo else os.path.basename(os.getcwd())
 
-          # Iterate through folders
-          find . -type d ! -path '*/\.*' | while read -r dir; do
-            echo '    "'"$dir"'": {' >> tmp.json
+          def is_hidden(path):
+              return any(part.startswith('.') for part in path.split(os.sep) if part)
 
-            # Process each file in that folder
-            find "$dir" -maxdepth 1 -type f ! -path '*/\.*' | while read -r file; do
-              filename=$(basename "$file")
-              if [[ $filename == *.md ]]; then
-                # Extract YAML front matter (between --- ... ---)
-                FRONTMATTER=$(awk '/^---/{flag=!flag; next} flag' "$file")
-                if [ -n "$FRONTMATTER" ]; then
-                  # Parse with yq (fail action if invalid YAML)
-                  META=$(echo "$FRONTMATTER" | yq -o=json '.')
-                  echo '      "'"$filename"'": '"$META"',' >> tmp.json
-                else
-                  echo '      "'"$filename"'": {} ,' >> tmp.json
-                fi
-              else
-                echo '      "'"$filename"'": {} ,' >> tmp.json
-              fi
-            done
+          structure = {}
 
-            # close folder JSON
-            sed -i '$ s/,$//' tmp.json
-            echo '    },' >> tmp.json
-          done
+          for root, dirs, files in os.walk(".", topdown=True):
+              dirs[:] = [d for d in dirs if not d.startswith('.')]
+              if is_hidden(os.path.relpath(root, ".")) and root != ".":
+                  continue
+              key = os.path.normpath(root)
+              dkey = "." if key == "." else "./" + os.path.relpath(root, ".")
+              entries = {}
+              for fname in sorted(files):
+                  if fname.startswith('.'):
+                      continue
+                  fpath = os.path.join(root, fname)
+                  if fname.lower().endswith(".md"):
+                      with open(fpath, "r", encoding="utf-8") as f:
+                          text = f.read()
+                      m = re.match(r"^---\s*\n(.*?)\n---\s*\n?", text, re.DOTALL)
+                      if m:
+                          front = m.group(1)
+                          try:
+                              meta = yaml.safe_load(front) or {}
+                              if not isinstance(meta, dict):
+                                  raise yaml.YAMLError("Front matter is not a mapping")
+                              entries[fname] = meta
+                          except yaml.YAMLError as e:
+                              sys.stderr.write(f"Malformed YAML in {fpath}: {e}\n")
+                              sys.exit(1)
+                      else:
+                          entries[fname] = {}
+                  else:
+                      entries[fname] = {}
+              structure[dkey] = entries
 
-          # Clean trailing commas and close JSON
-          sed -i '$ s/,$//' tmp.json
-          cat tmp.json >> repo-structure.json
-          echo '  } }' >> repo-structure.json
-          rm tmp.json
-
-      - name: Overwrite README.md with JSON
-        run: |
-          cat repo-structure.json | jq . > README.md
+          out = {"repo": repo_name, "structure": structure}
+          with open("README.md", "w", encoding="utf-8") as f:
+              json.dump(out, f, ensure_ascii=False, indent=2)
+          PY
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "Update repo structure in README.md" || echo "No changes to commit"
           git push origin HEAD:main
