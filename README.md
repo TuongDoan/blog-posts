@@ -26,6 +26,13 @@
         "date": "2025-08-15",
         "tag": "Power Apps,PCF"
       },
+      "http-button-pcf.md": {
+        "type": "Post",
+        "title": "Http button PCF: Make HTTP request locally",
+        "description": "A Power Apps custom component (PCF) that allows you to send HTTP requests from your app locally",
+        "date": "2025-08-02",
+        "tag": "Power Apps,PCF"
+      },
       "power-apps-authoring-version.md": {
         "type": "Post",
         "title": "Understanding Power Apps Authoring Version",
