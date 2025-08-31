@@ -51,7 +51,7 @@
         "type": "Post",
         "title": "Power Apps Real-Time Co-Authoring for Canvas Apps",
         "description": "New Co-Authoring feature in Power Apps enables multiple makers to edit a canvas app simultaneously, boosting productivity and collaboration efficiency.",
-        "date": "2025-08-30",
+        "date": "2024-06-30",
         "tag": "Power Apps"
       },
       "power-apps-consistent-font-sizes.md": {
