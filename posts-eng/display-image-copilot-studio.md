@@ -1,9 +1,9 @@
 ---
 type: Post
-title: Display Base64 Images in Copilot Studio
+title: Display Images in Copilot Studio
 description: >-
-  A simple trick to display inline Base64-encoded images in Copilot Studio using data URI scheme and Send message node.
-date: '2025-08-31'
+  A simple trick to display inline images in Copilot Studio, not via image URL.
+date: '2025-08-01'
 tag: Copilot Studio
 ---
 
