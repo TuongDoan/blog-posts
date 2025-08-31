@@ -21,7 +21,7 @@
       },
       "document-processor-pcf.md": {
         "type": "Post",
-        "title": "New Power Apps PCF arrived: Document Processor PCF",
+        "title": "New Power Apps PCF arrived: Document Processor",
         "description": "a PCF control for fast, local Excel parsing and support multi-file drag&drop upload. No slow SharePoint handoffs or long Power Automate loops.",
         "date": "2025-08-15",
         "tag": "Power Apps,PCF"
