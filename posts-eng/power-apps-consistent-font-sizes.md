@@ -4,6 +4,7 @@ title: Maintaining Consistent Font Sizes in Canvas Apps
 description: >-
   Standardize font sizes in Power Apps canvas apps by learning unit differences, conversion tips, and how to use variables for consistent typography.
 date: '2024-02-30'
+tag: Power Apps
 ---
 When creating a modern-looking canvas app, one common challenge is the mixed usage of **classic** and **modern** controls. You may notice that the text in modern controls appears smaller than in classic controls. To maintain visual consistency, it’s important to keep the font size consistent across all the app’s controls.
 

@@ -4,6 +4,7 @@ title: Cộng Tác Thời Gian Thực (Co-Authoring) Trong Power Apps
 description: >-
   Tìm hiểu tính năng co-authoring mới trong Power Apps cho phép nhiều người cùng chỉnh sửa một ứng dụng canvas đồng thời
 date: '2025-08-30'
+tag: Power Apps
 ---
 Trước đây Power Apps cho phép nhiều người cùng nhau mở Studio để sửa app, nhưng chỉ có **một người** chỉnh sửa, những người khác chỉ có thể xem và không được thao tác gì.  
 

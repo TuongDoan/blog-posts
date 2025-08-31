@@ -4,6 +4,7 @@ title: How to Add a Custom Component to Your Power Apps
 description: >-
   Learn how to enhance your Power Apps by adding custom components, react code, and improved app functionality.
 date: '2025-01-06'
+tag: Power Apps,PCF
 ---
 Power Apps custom components, aka Power Apps Component Framework (PCF) components, are specialized building blocks created to enhance the functionality of your apps beyond the standard prebuilt controls provided by Microsoft. While Power Apps includes many useful built-in controls, custom components let you integrate advanced features tailored to your specific business needs.
 

@@ -4,6 +4,7 @@ title: String interpolation in Power Fx
 description: >-
   String interpolation helps us place the right data into the right place without splitting a main string. Without it, we had to split the main string into many small pieces to insert the data between words.
 date: '2024-06-09'
+tag: Power Apps, Power Fx
 ---
 String interpolation is a technique to evaluate a string literal containing placeholders. In C#, we use `$"string"` for interpolation, and in Python, we use `f"string"`. In Power Fx, string interpolation helps us place the right data into the right place without splitting a main string. Without it, we had to split the main string into many small pieces to insert the data between words.
 

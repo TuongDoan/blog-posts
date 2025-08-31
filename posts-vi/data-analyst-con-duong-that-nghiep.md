@@ -4,6 +4,7 @@ title: Data Analyst – Con Đường Nhẹ Nhàng Nhất Để Bước Vào Ng�
 description: >-
   Góc nhìn thực tế về nghề Data Analyst: dễ bước vào ngành nhưng khó xin việc, nhiều cạnh tranh và rủi ro thất nghiệp nếu chỉ tin vào quảng cáo của các trung tâm đào tạo.
 date: '2024-12-01'
+tag: General
 ---
 Chỉ cần “lỡ tay” google về việc học Data/AI, 10 phút sau Facebook của bạn sẽ dày đặc quảng cáo các khoá học với những câu từ hoa mỹ nhất: Ngành hot nhất, tốp thu nhập cao nhất, cơ hội việc làm rất nhiều, lương nghìn đô, nghề trending ,…. Nghe mà sướng trợn mắt, lên đỉnh giựt giựt luôn 🤣
 

@@ -4,6 +4,7 @@ title: Nút Bấm Mới Với Icon Trong Power Apps
 description: >-
   Giới thiệu nút bấm mới trong bộ modern control của Power Apps, tích hợp icon và text trong cùng một control, giúp giảm số lượng control phải sử dụng và dễ dàng quản lý code hơn.
 date: '2024-06-01'
+tag: Power Apps
 ---
 Trước đây chúng ta phải tạo ra một **container** để gộp icon với label hoặc nút bấm. Giờ Microsoft đã cập nhật **nút bấm mới** (trong bộ *modern control*), có sẵn luôn.  
 

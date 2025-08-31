@@ -4,6 +4,7 @@ title: Cách thêm code component (PCF) vào Power Apps để mở rộng tính 
 description: >-
   Hướng dẫn chi tiết cách kích hoạt, import và sử dụng code component (PCF) trong Power Apps nhằm mở rộng tính năng cho ứng dụng canvas.
 date: '2025-07-06'
+tag: Power Apps
 ---
 Power Apps custom components, hay Power Apps Component Framework (PCF), là các thành phần được phát triển từ code truyền thống, chuyên biệt dùng để nâng cao chức năng cho ứng dụng của bạn. Mặc định Power Apps đã cung cấp nhiều control hữu ích, tuy nhiên đôi khi có các yêu cầu nghiệp vụ nâng cao sẽ vượt ra ngoài khả năng của các thành phần đó, vì thế PCF ra đời để bổ sung, tuỳ chỉnh Power Apps với TypeScript.
 

@@ -4,6 +4,7 @@ title: Tải Xuống Hình Ảnh Từ Cột Hình Ảnh SharePoint Một Cách A
 description: >-
   Hướng dẫn chi tiết cách sử dụng Power Automate và Power Apps để tạo URL mã hóa, đảm bảo việc tải xuống hình ảnh từ SharePoint luôn an toàn và kế thừa quyền truy cập từ người dùng.
 date: '2024-05-26'
+tag: Power Apps
 ---
 Có nhiều cách để tải xuống hình ảnh được lưu trữ trong cột hình ảnh của SharePoint, nhưng ở đây mình sẽ chỉ cho bạn cách tải chúng **một cách an toàn** từ Power Apps.
 

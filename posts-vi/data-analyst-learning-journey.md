@@ -4,6 +4,7 @@ title: Những Gì Mình Đã Học Để Đi Làm Data Analyst
 description: >-
   Hành trình học Data Analyst từ xuất phát điểm dân kinh doanh, cách mình học code, tham gia khóa học, luyện SQL và xây dựng portfolio để xin việc.
 date: '2024-12-01'
+tag: General
 ---
 ## Background Của Mình
 

@@ -59,6 +59,11 @@ jobs:
                               meta = yaml.safe_load(front) or {}
                               if not isinstance(meta, dict):
                                   raise yaml.YAMLError("Front matter is not a mapping")
+                              
+                              # Ensure 'tag' is present, default to empty string if not
+                              if 'tag' not in meta:
+                                  meta['tag'] = ''
+                              
                               entries[fname] = meta
                           except yaml.YAMLError as e:
                               sys.stderr.write(f"Malformed YAML in {fpath}: {e}\n")

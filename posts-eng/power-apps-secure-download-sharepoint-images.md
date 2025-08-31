@@ -4,6 +4,7 @@ title: Securely Download Images from SharePoint’s Image Column in Power Apps
 description: >-
   A step-by-step guide on securely downloading images from SharePoint’s image column using Power Apps and Power Automate by reconstructing encoded URLs instead of relying on binary data.
 date: '2024-05-26'
+tag: Power Apps
 ---
 There are several ways to download images stored in SharePoint’s image column, but this tutorial will show you how to download them securely from Power Apps.
 

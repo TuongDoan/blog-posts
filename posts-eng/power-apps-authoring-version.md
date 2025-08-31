@@ -4,6 +4,7 @@ title: Understanding Power Apps Authoring Version
 description: >-
   Learn what Power Apps Authoring Version is, why Microsoft frequently updates it, and how to switch between versions.
 date: '2024-07-01'
+tag: Power Apps
 ---
 **Power Apps Authoring Version** refers to the version of Power Apps Studio, the tool you use to develop your apps. Microsoft releases new authoring versions quite often to deliver new features, improvements, and bug fixes. By default, Microsoft will load the most stable version with high compatibility for you.
 

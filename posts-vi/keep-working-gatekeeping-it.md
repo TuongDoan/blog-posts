@@ -4,6 +4,7 @@ title: Keep Working!
 description: >-
   Hôm nay ngồi tâm sự hướng nghiệp cho thằng em học lớp 12 muốn học Software Engineer, mà nó bị “đàn anh” hù dữ quá rối luôn.
 date: '2024-12-01'
+tag: General
 ---
 
 Hôm nay ngồi tâm sự hướng nghiệp cho thằng em học lớp 12 muốn học Software Engineer, mà nó bị “đàn anh” hù dữ quá rối luôn.

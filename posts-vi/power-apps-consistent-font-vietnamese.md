@@ -4,6 +4,7 @@ title: Giữ Kích Thước Phông Chữ Nhất Quán Giữa Modern và Classic 
 description: >-
   Hướng dẫn cách đồng bộ kích thước phông chữ giữa modern control và classic control cũ trong Power Apps
 date: '2024-05-22'
+tag: Power Apps
 ---
 Khi tạo ứng dụng canvas sử dụng kết hợp các **modern control** và **classic control**, bạn có thể nhận thấy rằng văn bản trong các modern control có vẻ nhỏ hơn so với các control cũ.  
 Để duy trì tính nhất quán về mặt hình thức, chúng ta cần giữ kích thước phông chữ nhất quán trên tất cả các control của ứng dụng.

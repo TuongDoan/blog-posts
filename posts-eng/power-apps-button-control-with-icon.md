@@ -4,6 +4,7 @@ title: New Power Apps Button Control with Icon
 description: >-
   First look of Button control with icon in Power Apps, which simplifies creating buttons with integrated icons and text, eliminating the need for grouping multiple controls.
 date: '2024-06-01'
+tag: Power Apps
 ---
 A long-awaited and nice-to-have feature has just been released: **Button control with icon**.  
 
