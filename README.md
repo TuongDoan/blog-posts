@@ -12,6 +12,13 @@
         "date": "2025-01-06",
         "tag": "Power Apps,PCF"
       },
+      "display-image-copilot-studio.md": {
+        "type": "Post",
+        "title": "Display Base64 Images in Copilot Studio",
+        "description": "A simple trick to display inline Base64-encoded images in Copilot Studio using data URI scheme and Send message node.",
+        "date": "2025-08-31",
+        "tag": "Copilot Studio"
+      },
       "power-apps-authoring-version.md": {
         "type": "Post",
         "title": "Understanding Power Apps Authoring Version",
