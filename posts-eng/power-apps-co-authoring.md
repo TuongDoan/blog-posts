@@ -3,7 +3,7 @@ type: Post
 title: Power Apps Real-Time Co-Authoring for Canvas Apps
 description: >-
   New Co-Authoring feature in Power Apps enables multiple makers to edit a canvas app simultaneously, boosting productivity and collaboration efficiency.
-date: '2025-08-30'
+date: '2024-06-30'
 tag: Power Apps
 ---
 The old real-time collaboration method allowed multiple makers/developers to access the app, but only one person could edit at a time. Now, with the new **Co-Authoring** feature, we can have a team work on a single canvas app simultaneously. This update will boost productivity, accelerate development speed, and, more importantly, improve the overall efficiency of the whole project.
