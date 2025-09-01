@@ -51,7 +51,7 @@ If your organization uses message packs, you'll need to obtain two different lic
 
 Here’s how to get them set up:
 
-1.  Go to the **Purchase services** area in the [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/catalog) <= click here
+1.  Go to the **Purchase services** area in the [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/catalog) 
 
 2.  Search for "Copilot Studio" to see the licenses and grab the main **Microsoft Copilot Studio** tenant license.
 
