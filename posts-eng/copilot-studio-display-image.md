@@ -31,8 +31,4 @@ I found a way to display images in **Copilot Studio**: using an inline **Base64-
 - You **cannot** put an `<img>` tag directly into the **Send message** node; the system will sanitize it.
 - With this trick, you can display any image as long as you can encode it in Base64 format.
 
-👉 If you want to know how to do Base64 encoding, let me know in the comment section—I will write another tutorial.
 
----
-
-**#CopilotStudio**
