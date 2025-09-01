@@ -53,19 +53,18 @@ Here’s how to get them set up:
 
 1.  Go to the **Purchase services** area in the [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/catalog) <= click here
 
-2.  Search for "Copilot Studio" to see the licenses.
+2.  Search for "Copilot Studio" to see the licenses and grab the main **Microsoft Copilot Studio** tenant license.
 
-3.  Grab the main **Microsoft Copilot Studio** tenant license.
-<img width="800" height="631" alt="Screenshot 2025-09-01 at 11 50 11 PM" src="https://github.com/user-attachments/assets/d108302e-777a-4e2e-be70-5dc01e2f2d37" />
+<img width="800" height="631" alt="Screenshot 2025-09-01 at 11 50 11 PM" src="https://github.com/user-attachments/assets/145e6887-dae7-4870-9588-6413dc7f9def" />
 
 
     * Here's a closer look at the tenant license details:*
 <img width="1094" height="418" alt="Screenshot 2025-09-02 at 12 52 41 AM" src="https://github.com/user-attachments/assets/68a94a3f-4a01-4fe5-b886-efca825e6c5a" />
 
 
-5.  After that, find the **Microsoft Copilot Studio User License** under **"Add-ons"** section as showed in the picture above. "Buy" as many of these licenses as you need. It's free ($0)
+3.  After that, find the **Microsoft Copilot Studio User License** under **"Add-ons"** section as showed in the picture above. "Buy" as many of these licenses as you need. It's free ($0)
 
-6.  Finally, go to **Users** > **Active users**, pick the people you want to give access to, and assign them the **Microsoft Copilot Studio User License**.
+4.  Finally, go to **Users** > **Active users**, pick the people you want to give access to, and assign them the **Microsoft Copilot Studio User License**.
 
 ---
 
