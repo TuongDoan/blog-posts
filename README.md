@@ -2,6 +2,7 @@
   "repo": "blog-posts",
   "structure": {
     ".": {
+      "LICENSE": {},
       "README.md": {}
     },
     "./posts-eng": {
@@ -12,12 +13,19 @@
         "date": "2025-01-06",
         "tag": "Power Apps,PCF"
       },
-      "display-image-copilot-studio.md": {
+      "copilot-studio-display-image.md": {
         "type": "Post",
         "title": "Display Images in Copilot Studio",
         "description": "A simple trick to display inline images in Copilot Studio, not via image URL.",
         "date": "2025-08-01",
         "tag": "Copilot Studio"
+      },
+      "copilot-studio-fix-agent-author-permission.md": {
+        "type": "Post",
+        "title": "Guide - Granting Users Access to Create and Manage Copilot Studio Agents",
+        "description": "Encountering permission issues in Copilot Studio? This guide walks you through the steps to ensure you and your team have the access needed to create and manage agents",
+        "date": "2025-09-01",
+        "tag": "Copilot Studio, AI, Agent, Governance, Power Platform"
       },
       "document-processor-pcf.md": {
         "type": "Post",
