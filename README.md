@@ -41,6 +41,13 @@
         "date": "2025-08-02",
         "tag": "Power Apps,PCF"
       },
+      "personal-commencement-speech.md": {
+        "type": "Post",
+        "title": "My Address at Troy University Commencement",
+        "description": "My Address at Troy University Commencement.",
+        "date": "2021-10-01",
+        "tag": "General"
+      },
       "power-apps-authoring-version.md": {
         "type": "Post",
         "title": "Understanding Power Apps Authoring Version",
